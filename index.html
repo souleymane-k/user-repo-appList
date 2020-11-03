@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER-REPO-LIST</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Individual User Repositories List</h1>
+           
+        <form > 
+         <label for="user">User Repository</label>
+          <input class="enter" type="text" id="user" placeholder="Enter Name" required>
+          <button type="submit" class="click" >Submit!</button>
+        
+        </form>
+       
+        <section class="results hidden">
+          <h2>SEE RESULT BELOW!</h2>
+          <div id="repoName"> </div> 
+          <div id="urlLink"></div>
+        </section>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>  
+</body>
+</html>
