@@ -9,4 +9,5 @@ form{
 }
 .results{
     text-align: center;
+    display: none;
 }
