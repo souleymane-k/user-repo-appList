@@ -11,18 +11,17 @@ function getUserInfo(inputName) {
   
   function displayResults(responseJson) {
     console.log(responseJson);
-    $('.results').empty()
+    $('.results').empty();
     //replace the existing image with the new one
-    $('.results').replaceWith( `
-    <ul>
+    
+    $('.results').replaceWith(`
     <div>${responseJson.name}</div>
     <div>${responseJson.html_url}</div>
-    </ul>
     `
-    )
-  
+  )
+
     //display the results section
-    $('.results').removeClass('hidden');
+    $('.results').removeClass('.hidden');
   
   }
 
@@ -33,9 +32,9 @@ $('form').submit(event =>{
 event.preventDefault();
 console.log('watchForm section');
 let userInput = $('.enter').val();
-     $('.enter').val(" ");
-     let inputName = userInput.split(' ').join('')
-     getUserInfo(inputName);    
+$('.enter').val(" ");
+let inputName = userInput.split(' ').join('')
+getUserInfo(inputName);    
 
 })
 

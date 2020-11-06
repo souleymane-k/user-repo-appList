@@ -16,15 +16,18 @@ form{
     max-height: 945px;
     margin: 0 auto;
 }
-.results{
+.repoView{
     max-width: 600px;
     max-height: 500px;
     margin-top: 20px;
-   border-image-repeat: none;
-   direction:flex;
-   flex-direction: column;
-   display: none;
+    border-image-repeat: none;
+    direction:flex;
+    flex-direction: column;
 }
 img{
 margin-top:40px;
+}
+.hidden{
+    
+    display:none;
 }
